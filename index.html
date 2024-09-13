@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body {
+            background-image: url(perfection.jpg);
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Protected Page</title>
+    <script>
+        function checkPassword() {
+            // Define the correct password
+            var correctPassword = "Akashi_ga_daisuki";  // Replace with your desired password
+            // Get the input value from the user
+            var enteredPassword = document.getElementById("password").value;
+
+            // Check if the entered password matches the correct password
+            if (enteredPassword === correctPassword) {
+                // Redirect to the new page if the password is correct
+                window.location.href = "Untitled-1.html";  // Replace with the URL of your new page
+            } else {
+                // Show an alert if the password is incorrect
+                alert("Incorrect password, please try again.");
+            }
+        }
+    </script>
+</head>
+<body>
+    <h2 {
+        border: 2px solid red; /* Change 'red' to your desired color */
+        padding: 10px; /* Optional: add padding to avoid text touching the border */
+    }style="color: white;">Please Enter Password to Continue</h2>
+    <input type="password" id="password" placeholder="Enter password">
+    <button onclick="checkPassword()">Submit</button>
+    <iframe src='https://my.spline.design/peachandgomacopy-57fbaaf75502dcf3807bd4911c595295/' frameborder='0' width='500' height='500'></iframe>
+</body>
+</html>
